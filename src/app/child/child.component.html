@@ -1,0 +1,24 @@
+<h1>ONE WAY DATABINDING</h1>
+<h1>Interpolation works!</h1>
+
+{{Name}}<br><br>
+
+<h1>Property & Event works</h1>
+
+<label>PLEASE ENTER YOUR NAME</label><br><br>
+<input type="text" [ngModel]="enteredName"(ngModelChange)="onNameChange($event)">
+
+<h2>ENTEREDVALUE :</h2>
+{{displayvalue}}
+<br>
+<h1>TWO WAY DATABINDING & NGMODEL</h1>
+
+<label>PLEASE ENTER YOUR NAME</label><br><br>
+<input type="text" [(ngModel)]="enteredName" (ngModelChange)="onname($event)">
+
+<h2>ENTEREDVALUE :</h2>
+{{enteredName}}
+
+
+<h2>Parent Name is</h2>
+{{parentName}}
